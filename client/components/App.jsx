@@ -1,21 +1,57 @@
 import React, { useState, useEffect } from 'react'
 
-import { getWelcome } from '../apiClient'
+import { getWelcome, getAllCharacters, getAllQuestions } from '../apiClient'
 
 function App() {
-  const [welcomeStatement, setWelcomeStatement] = useState('')
+  // const [welcomeStatement, setWelcomeStatement] = useState('')
+  const [data, setData] = useState([])
+  const mainCharacters = [
+    'Hermione Jean Granger',
+    'Luna Lovegood',
+    'Minerva McGonagall',
+    'Bellatrix Lestrange',
+  ]
+
+  const [mainCharInfo, setMainCharInfo] = useState([])
 
   useEffect(() => {
-    getWelcome()
-      .then((res) => {
-        setWelcomeStatement(res.statement)
+    getAllCharacters()
+      .then((characters) => {
+        const mains = []
+        characters.forEach((character) => {
+          if (mainCharacters.includes(character.character)) {
+            mains.push(character)
+          }
+        })
+        setMainCharInfo(mains)
       })
       .catch((err) => {
         console.error(err.message)
       })
-  })
+  }, [])
 
-  return <h1>{welcomeStatement}</h1>
+  useEffect(() => {
+    getAllQuestions()
+      .then((questions) => {
+        console.log(questions)
+      })
+      .catch((err) => {
+        console.error(err.message)
+      })
+  }, [])
+
+  return (
+    <div>
+      {mainCharInfo.map((char) => {
+        return (
+          <div key={char.id}>
+            <div>{char.character}</div>
+            <img src={char.image} alt={char.character} />
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 export default App
