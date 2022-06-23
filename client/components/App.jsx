@@ -12,6 +12,8 @@ function App() {
     'Bellatrix Lestrange',
   ]
 
+  const [randomNumbers, setRandomNumbers] = []
+
   const [mainCharInfo, setMainCharInfo] = useState([])
 
   useEffect(() => {
@@ -39,6 +41,15 @@ function App() {
         console.error(err.message)
       })
   }, [])
+
+  function randomNumber() {
+    const currentRandomNumber = Math.floor(Math.random() * 10)
+    console.log(currentRandomNumber)
+  }
+  // useEffect(() => {
+  //   randomNumber()
+  //   })
+  // }, [])
 
   return (
     <div>
