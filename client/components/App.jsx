@@ -4,6 +4,8 @@ import { getWelcome, getAllCharacters, getAllQuestions } from '../apiClient'
 
 import { generateRandomNumber } from '../helperFunctions'
 
+import Questions from './Questions'
+
 function App() {
   // const [welcomeStatement, setWelcomeStatement] = useState('')
   const [data, setData] = useState([])
@@ -15,6 +17,8 @@ function App() {
   ]
 
   const [mainCharInfo, setMainCharInfo] = useState([])
+
+  const [questionsData, setQuestionsData] = useState([])
 
   useEffect(() => {
     getAllCharacters()
@@ -35,16 +39,12 @@ function App() {
   useEffect(() => {
     getAllQuestions()
       .then((questions) => {
-        console.log(questions)
+        setQuestionsData(questions)
       })
       .catch((err) => {
         console.error(err.message)
       })
   }, [])
-
-  // const [randomNumbers, setRandomNumbers] = useState([])
-
-  // function generateRandomNumber() {}
 
   return (
     <div>
@@ -56,6 +56,7 @@ function App() {
           </div>
         )
       })}
+      <Questions questions={questionsData} />
     </div>
   )
 }
