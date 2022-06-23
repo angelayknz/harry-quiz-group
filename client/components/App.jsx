@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 import { getWelcome, getAllCharacters, getAllQuestions } from '../apiClient'
 
-import wrongAnswersData from '../../data/wrongAnswers'
-
 function App() {
   // const [welcomeStatement, setWelcomeStatement] = useState('')
   const [data, setData] = useState([])
@@ -35,7 +33,7 @@ function App() {
   useEffect(() => {
     getAllQuestions()
       .then((questions) => {
-        console.log(questions.questions)
+        console.log(questions)
       })
       .catch((err) => {
         console.error(err.message)

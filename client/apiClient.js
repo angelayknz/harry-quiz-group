@@ -19,14 +19,18 @@ export function getAllCharacters() {
 // SUPERSEDED FUNCTIONS
 export function getAllQuestions() {
   return request.get('api/v1/questions').then((response) => {
-    const questions = response.body.questions
-    const question = questions[0]
+    const questions = response.body
+    console.log(questions)
 
-    const questionWithWrongAnswers = {
-      ...question,
-      wrongAnswers: ['wrongAnswer1', 'wrongAnswer2', 'wrongAnswer3'],
-    }
-    console.log(questionWithWrongAnswers)
-    return questionWithWrongAnswers
+    //TESTING ONE QUESTION FOR WRONG ANSWERS
+    // const question = questions[0]
+
+    // const questionWithWrongAnswers = {
+    //   ...question,
+    //   wrongAnswers: ['wrongAnswer1', 'wrongAnswer2', 'wrongAnswer3'],
+    // }
+
+    // console.log(questionsWithWrongAnswers)
+    return questions
   })
 }
