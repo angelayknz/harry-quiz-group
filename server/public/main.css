@@ -1,8 +1,9 @@
 .main-button{
-  font-family: 'harry-potter';
+  font-family: 'Harry Potter';
   color: #59216f;
   background-color: #e5c273;
-  border-radius: 10%
+  border-radius: 400%;
+  font-size: xxx-large
 
 }
 
@@ -27,6 +28,14 @@
   animation: bounce 1s;
 }
 
+.main-button-grid{
+  display: flex;
+  justify-content: center;
+  grid-column-start: 2;
+  grid-row-start: 5;
+  align-items: center;
+}
+
 .answer-button{
   font-family: 'harry-potter'
 }
@@ -39,15 +48,46 @@
   font-family: 'harry-potter'
 }
 
-.avatar{
-  
+.avatar-hermione{
+  grid-column-start: 1;
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border-style: solid;
+  border: #740001;
+  border-width: thick;
+}
+.avatar-luna{
+  grid-column-start: 2;
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+}
+.avatar-tonks{
+  grid-column-start: 3;
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+}
+.avatar-pansy{
+  grid-column-start: 4;
+  height: 90%;
+  width: auto;
+  object-fit: cover;
+}
+.avatar-grid {
+  display: grid;
+  gap: 1em;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-template-columns: repeat(4, 25%)
 }
 
-.home-body-grid {
+.home-wrapper > div {
   display: grid;
-  grid-template-columns: 20%, 80%;
-  grid-template-rows: repeat(5, 'auto')
-
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(5, 20%)
 }
 
 .question-body-grid{
@@ -87,9 +127,27 @@
 
 .emblem {
   position: relative;
-  left: 1040px;
+  /* left: 1040px; */
+  grid-column-start: 1;
+  grid-row-start: 2
+
 }
+/* .emblem-grid {
+  display: grid;
+  grid-column-start: 1;
+  grid-row-start: 2
+
+} */
 
 .logo {
-  position: relative;
+  position: center;
+}
+.logo-grid{
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 1
+}
+
+.bg {
+  background-image: url('./pics/map2.png');
 }
