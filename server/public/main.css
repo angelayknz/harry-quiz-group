@@ -1,0 +1,95 @@
+.main-button{
+  font-family: 'harry-potter';
+  color: #59216f;
+  background-color: #e5c273;
+  border-radius: 10%
+
+}
+
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+
+.main-button:hover{
+  animation: bounce 1s;
+}
+
+.answer-button{
+  font-family: 'harry-potter'
+}
+
+.answer-button:hover{
+
+}
+
+.heading{
+  font-family: 'harry-potter'
+}
+
+.avatar{
+  
+}
+
+.home-body-grid {
+  display: grid;
+  grid-template-columns: 20%, 80%;
+  grid-template-rows: repeat(5, 'auto')
+
+}
+
+.question-body-grid{
+
+}
+
+.finish-body-grid{
+
+}
+
+.body-mobile {
+
+}
+
+.character-choice {
+  
+}
+
+.character-choice-text{
+  font-family: 'harry-potter'
+}
+.score{
+  font-family: 'harry-potter'
+}
+
+.endScore{
+  font-family: 'harry-potter'
+}
+
+.entername {
+  font-family: 'harry-potter'
+}
+
+.gif {
+
+}
+
+.emblem {
+  position: relative;
+  left: 1040px;
+}
+
+.logo {
+  position: relative;
+}
