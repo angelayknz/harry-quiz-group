@@ -9,8 +9,24 @@ const harryPotterURL = '/api/v1/quiz'
 // }
 // ***   ***   ***
 
-export function getAllStudentsCharacters() {
+export function getAllCharacters() {
   return request.get(harryPotterURL).then((response) => {
-    console.log(response.body)
+    const characters = response.body
+    return characters
+  })
+}
+
+// SUPERSEDED FUNCTIONS
+export function getAllQuestions() {
+  return request.get('api/v1/questions').then((response) => {
+    const questions = response.body.questions
+    const question = questions[0]
+
+    const questionWithWrongAnswers = {
+      ...question,
+      wrongAnswers: ['wrongAnswer1', 'wrongAnswer2', 'wrongAnswer3'],
+    }
+    console.log(questionWithWrongAnswers)
+    return questionWithWrongAnswers
   })
 }

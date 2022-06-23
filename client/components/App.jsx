@@ -1,45 +1,59 @@
 import React, { useState, useEffect } from 'react'
 
-import { getWelcome, getAllStudentsCharacters } from '../apiClient'
+import { getWelcome, getAllCharacters, getAllQuestions } from '../apiClient'
+
+import wrongAnswersData from '../../data/wrongAnswers'
 
 function App() {
   // const [welcomeStatement, setWelcomeStatement] = useState('')
   const [data, setData] = useState([])
-  const [mainCharacters, setMainCharacters] = useState(['Harry Potter','Hermione Granger','Draco Malfoy','Ron Weasley','Luna Lovegood'])
+  const mainCharacters = [
+    'Hermione Jean Granger',
+    'Luna Lovegood',
+    'Minerva McGonagall',
+    'Bellatrix Lestrange',
+  ]
+
+  const [mainCharInfo, setMainCharInfo] = useState([])
 
   useEffect(() => {
-    getAllStudentsCharacters()
+    getAllCharacters()
       .then((characters) => {
-        characters.map()
-        mainCharacters.includes(characters.)
+        const mains = []
+        characters.forEach((character) => {
+          if (mainCharacters.includes(character.character)) {
+            mains.push(character)
+          }
         })
-        setData(res)
+        setMainCharInfo(mains)
       })
       .catch((err) => {
         console.error(err.message)
       })
-  }, [])]
+  }, [])
 
-  guys are you there? can you guys see this? I will restart my pc
- yes, we are here. but cant hear u . ok 
-  // CHARACTERS //
-  // Harry Potter
-  // Hermione Granger
-  // Draco Malfoy
-  // Ron Weasley
-  // Luna Lovegood
+  useEffect(() => {
+    getAllQuestions()
+      .then((questions) => {
+        console.log(questions.questions)
+      })
+      .catch((err) => {
+        console.error(err.message)
+      })
+  }, [])
 
-  // useEffect(() => {
-  //   getWelcome()
-  //     .then((res) => {
-  //       setWelcomeStatement(res.statement)
-  //     })
-  //     .catch((err) => {
-  //       console.error(err.message)
-  //     })
-  // })
-
-  return <h1>Hello!</h1>
+  return (
+    <div>
+      {mainCharInfo.map((char) => {
+        return (
+          <div key={char.id}>
+            <div>{char.character}</div>
+            <img src={char.image} alt={char.character} />
+          </div>
+        )
+      })}
+    </div>
+  )
 }
 
 export default App
