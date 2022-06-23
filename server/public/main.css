@@ -36,45 +36,93 @@
   align-items: center;
 }
 
-.answer-button{
-  font-family: 'harry-potter'
+.answer-button-gryffindor{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #740001;
+  color: #D3A625
+}
+.answer-button-gryffindor:hover{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #D3A625;
+  color: #740001;
+}
+.answer-button-slytherin{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #1A472A;
+  color: #5D5D5D
+}
+.answer-button-slytherin:hover{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #5D5D5D;
+  color: #1A472A
+}
+.answer-button-hufflepuff{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #FFD800;
+  color: #000000
+}
+.answer-button-hufflepuff:hover{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #000000;
+  color: #FFD800
+}
+.answer-button-ravenclaw{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #0E1A40;
+  color: #946B2D
 }
 
-.answer-button:hover{
-
+.answer-button-ravenclaw:hover{
+  font-family: 'Harry Potter';
+  border-radius:50%;
+  background-color: #946B2D;
+  color: #0E1A40;
 }
 
 .heading{
-  font-family: 'harry-potter'
+  font-family: 'Harry Potter';
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .avatar-hermione{
   grid-column-start: 1;
-  height: 90%;
+  height: 60%;
   width: auto;
   object-fit: cover;
   border-radius: 50%;
-  border-style: solid;
-  border: #740001;
-  border-width: thick;
+  border: 10px solid #740001;
 }
 .avatar-luna{
   grid-column-start: 2;
-  height: 90%;
+  height: 60%;
   width: auto;
   object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #0E1A40;
 }
-.avatar-tonks{
-  grid-column-start: 3;
-  height: 90%;
-  width: auto;
-  object-fit: cover;
-}
-.avatar-pansy{
+.avatar-minerva{
   grid-column-start: 4;
-  height: 90%;
+  height: 60%;
   width: auto;
   object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #D3A625;
+}
+.avatar-bellatrix{
+  grid-column-start: 3;
+  height: 60%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 10px solid #1A472A;
 }
 .avatar-grid {
   display: grid;
@@ -107,18 +155,18 @@
 }
 
 .character-choice-text{
-  font-family: 'harry-potter'
+  font-family: 'Harry Potter'
 }
 .score{
-  font-family: 'harry-potter'
+  font-family: 'Harry Potter'
 }
 
 .endScore{
-  font-family: 'harry-potter'
+  font-family: 'Harry Potter'
 }
 
 .entername {
-  font-family: 'harry-potter'
+  font-family: 'Harry Potter'
 }
 
 .gif {
@@ -141,6 +189,7 @@
 
 .logo {
   position: center;
+  border-radius:40%
 }
 .logo-grid{
   display: grid;
@@ -150,4 +199,10 @@
 
 .bg {
   background-image: url('./pics/map2.png');
+}
+
+.temp-grid{
+  display: grid;
+  grid-column-start: 2;
+  grid-row-start: 2
 }
