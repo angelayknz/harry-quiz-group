@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-import { getWelcome, getAllCharacters, getAllQuestions } from '../apiClient'
+import { getAllCharacters, getAllQuestions } from '../apiClient'
 
 function App() {
   // const [welcomeStatement, setWelcomeStatement] = useState('')
