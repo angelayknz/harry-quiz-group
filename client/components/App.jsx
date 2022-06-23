@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 
 import { getAllCharacters, getAllQuestions } from '../apiClient'
 
+import { generateRandomNumber } from '../helperFunctions'
+
 function App() {
   // const [welcomeStatement, setWelcomeStatement] = useState('')
   const [data, setData] = useState([])
@@ -11,8 +13,6 @@ function App() {
     'Minerva McGonagall',
     'Bellatrix Lestrange',
   ]
-
-  const [randomNumbers, setRandomNumbers] = []
 
   const [mainCharInfo, setMainCharInfo] = useState([])
 
@@ -42,14 +42,9 @@ function App() {
       })
   }, [])
 
-  function randomNumber() {
-    const currentRandomNumber = Math.floor(Math.random() * 10)
-    console.log(currentRandomNumber)
-  }
-  // useEffect(() => {
-  //   randomNumber()
-  //   })
-  // }, [])
+  // const [randomNumbers, setRandomNumbers] = useState([])
+
+  // function generateRandomNumber() {}
 
   return (
     <div>
