@@ -2,125 +2,125 @@
   {
     "question": "What school does Harry Potter attend?",
     "wrongAnswers": [
-      "Rangitoto Colleage",
-      "Westlake Boys",
-      "Auckland Grammar School"
+      "Durmstrang",
+      "Beauxbatons",
+      "Castelobruxo"
     ]
   },
   {
     "question": "Who is the headmaster of the school Harry attends?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Minerva McGonagall", "Cornelius Fudge", "Madame Maxime"]
   },
   {
     "question": "Who is Harry Potters greatest enemy?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Dolores Umbridge", "Severus Snape", "Nagini"]
   },
   {
     "question": "Who is Harry Potters closest friend (male)?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Neville Longbottom", "Charlie Weasley", "Cedric Diggory"]
   },
   {
     "question": "Who is Harry Potters closest friend (female)?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Luna Lovegood", "Cho Chang", "Parvati Patil"]
   },
   {
     "question": "What game, using flying broomsticks, is played by wizards?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Headless Hunt", "Winged Horse Races", "Wizarding Skittles"]
   },
   {
     "question": "What teacher, despised by many, teaches potions?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Horace Slughorn", "Gilderoy Lockhart", "Dolores Umbridge"]
   },
   {
-    "question": "And what type of animal is it?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "question": "What type of animal is Harry's pet?",
+    "wrongAnswers": ["Frog", "Rat", "Cat"]
   },
   {
     "question": "Who tells Harry that he is, in fact, a wizard?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Albus Dumbledore", "Petunia Dursley", "Cornelius Fudge"]
   },
   {
     "question": "Who wrote the Harry Potter series?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["N K Jemisin", "Roald Dahl", "Terry Pratchet"]
   },
   {
     "question": "In what country are the books set?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["France", "New Zealand", "Italy"]
   },
   {
     "question": "What platform does the train to the school depart from?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["9 & 4/5", "10", "8 & 3/4"]
   },
   {
     "question": "What type of creature is Dobby?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Goblin", "Giamt", "Thestral"]
   },
   {
     "question": "What house is Draco Malfoy a part of?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Hufflepuff", "Gryffindor", "Ravenclaw"]
   },
   {
     "question": "What prison does Sirius Black escape from?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Alcatraz", "St Brutus", "Erkstag"]
   },
   {
     "question": "In this game, what is Harry Potter's position?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Beater", "Keeper", "Chaser"]
   },
   {
     "question": "What is Harry's mothers name?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Jasmine", "Lilac", "Rose"]
   },
   {
     "question": "What house has the house colour of blue?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Sytherin", "Hufflepuff", "Gryffindor"]
   },
   {
     "question": "Who is George Weasley's twin?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Charlie Weasley", "Bill Weaasley", "Percy Weasley"]
   },
   {
     "question": "What is the name of Harry's pet?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Crookshanks", "Scabbers", "Trevor"]
   },
   {
     "question": "What are Tom Riddle's diary and Rowena Ravenclaw's diadem?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Deathly Hallows", "Curses", "Emblems"]
   },
   {
     "question": "What creature, from the Chamber of Secrets, paralyzes and kills students in Harry's second year?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Spider", "Flobber Worms", "Hippogriff"]
   },
   {
     "question": "Who dies during the Triwizard Tornament?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Victor Krum", "Dobby", "Mad Eye Moody"]
   },
   {
     "question": "What will \"suck all the happiness from you\"?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Death Eater", "Thestral", "Boggart"]
   },
   {
     "question": "Who haunts the girls bathroom?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["The Grey Lady", "Bloody Baron", "Peeves"]
   },
   {
     "question": "Who has radish earrings?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Tonks Nymphadora", "Hermione Granger", "Hannah Abbott"]
   },
   {
     "question": "What does the spell \"Alohomora\" do",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Cast light", "Summon objects", "Levitate things"]
   },
   {
     "question": "What is the name of Voldemorts snake?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Hedwig", "Buckbeak", "Marvolo"]
   },
   {
     "question": "Who is the mischievous poltergeist that wreaks havoc throughout the school?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Moaning Myrtle", "Nearly Headless Nick", "Kreacher"]
   },
   {
     "question": "What ball does the school hold?",
-    "wrongAnswers": ["wrongAnswer1", "wrongAnswer2", "wrongAnswer3"]
+    "wrongAnswers": ["Christmas Ball", "Triwizard Ball", "Summer Ball"]
   }
 ]
