@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Question from './Question'
 
 export default function Questions(props) {
-  const { questions } = props
+  const { questions, updateScore } = props
   // console.log(questions[0])
   const [questionNumber, setQuestionNumber] = useState(0)
 
@@ -16,6 +16,7 @@ export default function Questions(props) {
       <Question
         question={questions[questionNumber]}
         changeQuestionNumberFn={changeQuestionNumber}
+        updateScore={updateScore}
       />
     </div>
   )

@@ -12,6 +12,8 @@ function App() {
 
   const [questionsData, setQuestionsData] = useState(false)
 
+  const [score, setScore] = useState(0)
+
   useEffect(() => {
     getAllQuestions()
       .then((questions) => {
@@ -22,10 +24,16 @@ function App() {
       })
   }, [])
 
+  function updateScore() {
+    setScore(score + 1)
+  }
+  console.log(score)
   return (
     <div>
       <Home />
-      {questionsData ? <Questions questions={questionsData} /> : null}
+      {questionsData ? (
+        <Questions questions={questionsData} updateScore={updateScore} />
+      ) : null}
     </div>
   )
 }
