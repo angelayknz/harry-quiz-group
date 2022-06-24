@@ -10,7 +10,7 @@ import Questions from './Questions'
 function App() {
   const [data, setData] = useState([])
 
-  const [questionsData, setQuestionsData] = useState([])
+  const [questionsData, setQuestionsData] = useState(false)
 
   useEffect(() => {
     getAllQuestions()
@@ -23,10 +23,10 @@ function App() {
   }, [])
 
   return (
-    <>
+    <div>
       <Home />
-      <Questions questions={questionsData} />
-    </>
+      {questionsData ? <Questions questions={questionsData} /> : null}
+    </div>
   )
 }
 

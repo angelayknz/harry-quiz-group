@@ -23,6 +23,7 @@ router.get('/', (req, res) => {
       }
     }
   })
+  // const json = JSON.stringify(questionsWithWrongAnswers)
   res.json(questionsWithWrongAnswers)
 })
 

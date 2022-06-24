@@ -1,14 +1,14 @@
 import React, { useState } from 'react'
+
+import Question from './Question'
+
 export default function Questions(props) {
   const { questions } = props
-  console.log(questions[0])
+  // console.log(questions[0])
+  const [questionNumber, setQuestionNumber] = useState(0)
   return (
     <div>
-      <div>{questions.question}</div>
-      <div>{questions.answer}</div>
-      {/* {questions.wrongAnswers.map((wrongAnswer) => {
-        return <div key={wrongAnswer}>{wrongAnswer}</div>
-      })} */}
+      <Question question={questions[questionNumber]} />
     </div>
   )
 }
