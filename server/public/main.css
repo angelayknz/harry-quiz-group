@@ -7,7 +7,6 @@
 
   margin-top: 75px;
   margin-left: 15%;
-
 }
 
 @keyframes bounce {
@@ -150,12 +149,11 @@
   grid-template-rows: repeat(4, 25%);
 }
 
-/* .question-body-grid {
-
+.question-body-grid {
   grid-template-rows: repeat(5, 20%);
 }
 
-.question-body-grid {
+/* .question-body-grid {
 }
 
 .finish-body-grid {
@@ -165,7 +163,7 @@
 }
 
 .character-choice {
-} 
+}  */
 
 .character-choice-text {
   font-family: 'Harry Potter';
@@ -187,18 +185,16 @@
 
 .flexheader {
   display: grid;
-
 }
 
 .emblem {
   display: grid;
   position: relative;
-
-  /* left: 1040px; */
   grid-column-start: 1;
   grid-row-start: 2;
 }
-/* .emblem-grid {
+
+.emblem-grid {
   display: grid;
 
   grid-column-start: 1;
@@ -232,4 +228,3 @@
 .wrong-answer-clicked {
   background-color: rgba(172, 24, 24, 0.613);
 }
-
