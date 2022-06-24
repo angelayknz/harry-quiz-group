@@ -1,20 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 export default function Question(props) {
   const { question, changeQuestionNumberFn, updateScore } = props
-  // console.log(question.answer)
 
-  // useEffect(() => {
-  //   console.log(question)
-  // }, [])
-
-  // const randObj = {
-  //   answer: 'Hogwarts',
-  //   category: 'Basic Harry Potter Quiz',
-  //   question: 'What school does Harry Potter attend?',
-  //   wrongAnswers: ['Durmstrang', 'Beauxbatons', 'Castelobruxo'],
-  // }
-  // console.log(randObj.answer)
   function handleNextButtonClick(e) {
     e.preventDefault()
     changeQuestionNumberFn()
@@ -28,8 +16,8 @@ export default function Question(props) {
     updateScore()
     const wrongAnswers = document.getElementsByClassName('wrong-answer')
     const wrongAnswer1 = wrongAnswers[0]
-    const wrongAnswer2 = wrongAnswers[1]
-    const wrongAnswer3 = wrongAnswers[2]
+    // const wrongAnswer2 = wrongAnswers[1]
+    // const wrongAnswer3 = wrongAnswers[2]
 
     wrongAnswer1.removeEventListener('mouseDonw', handleWrongAnswerClick)
 

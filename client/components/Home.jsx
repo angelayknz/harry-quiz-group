@@ -1,18 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import { getAllCharacters } from '../apiClient'
 
-
-
 export default function Home() {
-
-
-     const [mainCharInfo, setMainCharInfo] = useState([])
-     const mainCharacters = [
-       'Hermione Jean Granger',
-       'Luna Lovegood',
-       'Minerva McGonagall',
-       'Bellatrix Lestrange',
-     ]
+  const [mainCharInfo, setMainCharInfo] = useState([])
+  const mainCharacters = [
+    'Hermione Jean Granger',
+    'Luna Lovegood',
+    'Minerva McGonagall',
+    'Bellatrix Lestrange',
+  ]
 
   useEffect(() => {
     getAllCharacters()
@@ -31,7 +27,6 @@ export default function Home() {
   }, [])
 
   return (
-
     <div className="home-wrapper bg">
       <div className="flexheader">
         <img className="emblem" src="./pics/transparenthpe.gif" alt="emblem" />
@@ -44,7 +39,6 @@ export default function Home() {
         {mainCharInfo.map((char) => {
           return (
             <div className="allavatar" key={char.id}>
-              {/* <div>{char.character}</div> */}
               <img
                 className="avatar-hermione"
                 src={char.image}
@@ -65,7 +59,6 @@ export default function Home() {
           <input type="text" name="name" placeholder="Enter your name 🧙" />
         </label>
         <h4>Choose your character picture from below</h4>
-
         <input type="submit" value="Submit" id="submit" />
       </form>
     </div>

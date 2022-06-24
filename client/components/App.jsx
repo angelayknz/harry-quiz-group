@@ -1,16 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import ReactAudioPlayer from 'react-audio-player'
 
-import { getAllCharacters, getAllQuestions } from '../apiClient'
+import { getAllQuestions } from '../apiClient'
 
-import { generateRandomNumber } from '../helperFunctions'
+// import { generateRandomNumber } from '../helperFunctions'
 
 import Home from './Home'
 import Questions from './Questions'
 
 function App() {
-  const [data, setData] = useState([])
-
   const [questionsData, setQuestionsData] = useState(false)
 
   const [score, setScore] = useState(0)
@@ -30,30 +28,24 @@ function App() {
   }
   console.log(score)
   return (
-
     <>
-    <div>
-          <ReactAudioPlayer
-  src="/sounds/introSound.mp3"
-  autoPlay
-  controls
-  />
-    </div>
-
-    <div id="main">
-
-      <Home />
-      {questionsData ? (
-        <Questions
-          questions={questionsData}
-          updateScore={updateScore}
-          score={score}
-        />
-      ) : null}
-      <div id="display-score">
-        Score: {score}/{questionsData.length}
+      <div>
+        <ReactAudioPlayer src="/sounds/introSound.mp3" autoPlay controls />
       </div>
-    </div>
+
+      <div id="main">
+        <Home />
+        {questionsData ? (
+          <Questions
+            questions={questionsData}
+            updateScore={updateScore}
+            score={score}
+          />
+        ) : null}
+        <div id="display-score">
+          Score: {score}/{questionsData.length}
+        </div>
+      </div>
     </>
   )
 }
