@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 export default function Question(props) {
-  const { question } = props
-  const [questionData, setQuestionData] = useState(question)
+  const { question, changeQuestionNumberFn } = props
   // console.log(question.answer)
 
   // useEffect(() => {
@@ -16,15 +15,19 @@ export default function Question(props) {
   //   wrongAnswers: ['Durmstrang', 'Beauxbatons', 'Castelobruxo'],
   // }
   // console.log(randObj.answer)
+  function HandleNextButtonClick(e) {
+    e.preventDefault()
+    changeQuestionNumberFn()
+  }
 
   return (
     <div>
-      <div>{randObj.question}</div>
-      <div>{randObj.answer}</div>
-      {randObj.wrongAnswers.map((wa) => {
+      <div>{question.question}</div>
+      <div>{question.answer}</div>
+      {question.wrongAnswers.map((wa) => {
         return <div key={wa}>{wa}</div>
       })}
-      <div></div>
+      <button onClick={HandleNextButtonClick}>next</button>
     </div>
   )
 }
