@@ -30,6 +30,7 @@ function App() {
   }
   console.log(score)
   return (
+
     <>
     <div>
           <ReactAudioPlayer
@@ -38,7 +39,9 @@ function App() {
   controls
   />
     </div>
-    <div>
+
+    <div id="main">
+
       <Home />
       {questionsData ? (
         <Questions
@@ -47,6 +50,9 @@ function App() {
           score={score}
         />
       ) : null}
+      <div id="display-score">
+        Score: {score}/{questionsData.length}
+      </div>
     </div>
     </>
   )

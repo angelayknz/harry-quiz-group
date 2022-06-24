@@ -3,7 +3,6 @@ import React, { useState } from 'react'
 import Question from './Question'
 
 export default function Questions(props) {
-
   const { questions, updateScore, score } = props
 
   // console.log(questions[0])
@@ -24,7 +23,7 @@ export default function Questions(props) {
   }
 
   return (
-    <div>
+    <div id="questions-display">
       <Question
         question={questions[questionNumber]}
         changeQuestionNumberFn={changeQuestionNumber}

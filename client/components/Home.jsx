@@ -66,7 +66,7 @@ export default function Home() {
         </label>
         <h4>Choose your character picture from below</h4>
 
-        <input type="submit" value="Submit" />
+        <input type="submit" value="Submit" id="submit" />
       </form>
     </div>
   )
