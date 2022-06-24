@@ -1,3 +1,6 @@
+body {
+  font-family: 'Harry Potter';
+}
 .main-button {
   font-family: 'Harry Potter';
   color: #59216f;
@@ -9,6 +12,15 @@
   margin-left: 15%;
 }
 
+#next-button {
+  font-family: 'Harry Potter';
+  color: #59216f;
+  background-color: #e5c273;
+  border-radius: 400%;
+  font-size: xxx-large;
+  display: block;
+  margin-top: 50px;
+}
 @keyframes bounce {
   0%,
   20%,
@@ -29,7 +41,8 @@
   }
 }
 
-.main-button:hover {
+.main-button:hover,
+#next-button:hover {
   animation: bounce 1s;
 }
 
@@ -227,4 +240,59 @@
 }
 .wrong-answer-clicked {
   background-color: rgba(172, 24, 24, 0.613);
+}
+/* 
+#next-button {
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  background-color: lightgray;
+} */
+
+#question-display {
+  margin-top: 50px;
+  border-top: 0.2px solid lightgray;
+  padding-top: 50px;
+}
+
+#display-score {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question {
+  border-bottom: 0.2px solid lightgray;
+  padding-bottom: 20px;
+}
+.display-question {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  font-size: 3rem;
+}
+
+.answer {
+  width: 500px;
+  margin-top: 20px;
+  text-align: center;
+  cursor: grab;
+}
+
+#display-score {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+input {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+form {
+  font-size: 2rem;
 }
