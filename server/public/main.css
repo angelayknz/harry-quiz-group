@@ -4,8 +4,10 @@
   background-color: #e5c273;
   border-radius: 400%;
   font-size: xxx-large;
+
   margin-top: 75px;
   margin-left: 15%;
+
 }
 
 @keyframes bounce {
@@ -136,6 +138,11 @@
 
 .allavatar {
   margin-right: 30px;
+  display: grid;
+  gap: 1em;
+  grid-column-start: 2;
+  grid-row-start: 4;
+  grid-template-columns: repeat(4, 25%);
 }
 
 .home-wrapper > div {
@@ -144,6 +151,11 @@
 }
 
 /* .question-body-grid {
+
+  grid-template-rows: repeat(5, 20%);
+}
+
+.question-body-grid {
 }
 
 .finish-body-grid {
@@ -153,7 +165,7 @@
 }
 
 .character-choice {
-} */
+} 
 
 .character-choice-text {
   font-family: 'Harry Potter';
@@ -175,11 +187,19 @@
 
 .flexheader {
   display: grid;
+
 }
 
 .emblem {
   display: grid;
   position: relative;
+
+  /* left: 1040px; */
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+/* .emblem-grid {
+  display: grid;
 
   grid-column-start: 1;
   grid-row-start: 2;
@@ -205,3 +225,11 @@
   grid-column-start: 2;
   grid-row-start: 2;
 }
+
+.answer-clicked {
+  background-color: rgba(0, 156, 0, 0.497);
+}
+.wrong-answer-clicked {
+  background-color: rgba(172, 24, 24, 0.613);
+}
+
