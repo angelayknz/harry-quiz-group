@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import ReactAudioPlayer from 'react-audio-player'
 
 import { getAllCharacters, getAllQuestions } from '../apiClient'
 
@@ -29,7 +30,18 @@ function App() {
   }
   console.log(score)
   return (
+
+    <>
+    <div>
+          <ReactAudioPlayer
+  src="/sounds/introSound.mp3"
+  autoPlay
+  controls
+  />
+    </div>
+
     <div id="main">
+
       <Home />
       {questionsData ? (
         <Questions
@@ -42,6 +54,7 @@ function App() {
         Score: {score}/{questionsData.length}
       </div>
     </div>
+    </>
   )
 }
 
