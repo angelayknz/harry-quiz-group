@@ -4,6 +4,10 @@
   background-color: #e5c273;
   border-radius: 400%;
   font-size: xxx-large;
+
+  margin-top: 75px;
+  margin-left: 15%;
+
 }
 
 @keyframes bounce {
@@ -96,37 +100,44 @@
 
 .avatar-hermione {
   grid-column-start: 1;
-  height: 60%;
-  width: auto;
+  height: 225px;
+  width: 155px;
   object-fit: cover;
   border-radius: 50%;
   border: 10px solid #740001;
 }
 .avatar-luna {
   grid-column-start: 2;
-  height: 60%;
-  width: auto;
+  height: 325px;
+  width: 255px;
   object-fit: cover;
   border-radius: 50%;
   border: 10px solid #0e1a40;
 }
 .avatar-minerva {
   grid-column-start: 4;
-  height: 60%;
-  width: auto;
+  height: 325px;
+  width: 255px;
   object-fit: cover;
   border-radius: 50%;
   border: 10px solid #d3a625;
 }
 .avatar-bellatrix {
   grid-column-start: 3;
-  height: 60%;
-  width: auto;
+  height: 325px;
+  width: 255px;
   object-fit: cover;
   border-radius: 50%;
   border: 10px solid #1a472a;
 }
 .avatar-grid {
+  display: inline-flex;
+  margin-left: 35%;
+  margin-top: -30%;
+}
+
+.allavatar {
+  margin-right: 30px;
   display: grid;
   gap: 1em;
   grid-column-start: 2;
@@ -135,8 +146,12 @@
 }
 
 .home-wrapper > div {
-  display: grid;
   grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(4, 25%);
+}
+
+/* .question-body-grid {
+
   grid-template-rows: repeat(5, 20%);
 }
 
@@ -150,7 +165,7 @@
 }
 
 .character-choice {
-}
+} 
 
 .character-choice-text {
   font-family: 'Harry Potter';
@@ -170,18 +185,25 @@
 .gif {
 }
 
+.flexheader {
+  display: grid;
+
+}
+
 .emblem {
+  display: grid;
   position: relative;
+
   /* left: 1040px; */
   grid-column-start: 1;
   grid-row-start: 2;
 }
 /* .emblem-grid {
   display: grid;
-  grid-column-start: 1;
-  grid-row-start: 2
 
-} */
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
 
 .logo {
   position: center;
@@ -191,6 +213,7 @@
   display: grid;
   grid-column-start: 2;
   grid-row-start: 1;
+  margin-top: 50px;
 }
 
 .bg {
@@ -209,3 +232,4 @@
 .wrong-answer-clicked {
   background-color: rgba(172, 24, 24, 0.613);
 }
+
