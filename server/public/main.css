@@ -1,34 +1,38 @@
-.main-button{
+.main-button {
   font-family: 'Harry Potter';
   color: #59216f;
   background-color: #e5c273;
   border-radius: 400%;
-  font-size: xxx-large
-
+  font-size: xxx-large;
+  margin-top: 75px;
+  margin-left: 15%;
 }
 
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
+  0%,
+  20%,
+  60%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
 
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
 
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+  80% {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 
-.main-button:hover{
+.main-button:hover {
   animation: bounce 1s;
 }
 
-.main-button-grid{
+.main-button-grid {
   display: flex;
   justify-content: center;
   grid-column-start: 2;
@@ -36,173 +40,168 @@
   align-items: center;
 }
 
-.answer-button-gryffindor{
+.answer-button-gryffindor {
   font-family: 'Harry Potter';
-  border-radius:50%;
+  border-radius: 50%;
   background-color: #740001;
-  color: #D3A625
+  color: #d3a625;
 }
-.answer-button-gryffindor:hover{
+.answer-button-gryffindor:hover {
   font-family: 'Harry Potter';
-  border-radius:50%;
-  background-color: #D3A625;
+  border-radius: 50%;
+  background-color: #d3a625;
   color: #740001;
 }
-.answer-button-slytherin{
+.answer-button-slytherin {
   font-family: 'Harry Potter';
-  border-radius:50%;
-  background-color: #1A472A;
-  color: #5D5D5D
+  border-radius: 50%;
+  background-color: #1a472a;
+  color: #5d5d5d;
 }
-.answer-button-slytherin:hover{
+.answer-button-slytherin:hover {
   font-family: 'Harry Potter';
-  border-radius:50%;
-  background-color: #5D5D5D;
-  color: #1A472A
+  border-radius: 50%;
+  background-color: #5d5d5d;
+  color: #1a472a;
 }
-.answer-button-hufflepuff{
+.answer-button-hufflepuff {
   font-family: 'Harry Potter';
-  border-radius:50%;
-  background-color: #FFD800;
-  color: #000000
+  border-radius: 50%;
+  background-color: #ffd800;
+  color: #000000;
 }
-.answer-button-hufflepuff:hover{
+.answer-button-hufflepuff:hover {
   font-family: 'Harry Potter';
-  border-radius:50%;
+  border-radius: 50%;
   background-color: #000000;
-  color: #FFD800
+  color: #ffd800;
 }
-.answer-button-ravenclaw{
+.answer-button-ravenclaw {
   font-family: 'Harry Potter';
-  border-radius:50%;
-  background-color: #0E1A40;
-  color: #946B2D
+  border-radius: 50%;
+  background-color: #0e1a40;
+  color: #946b2d;
 }
 
-.answer-button-ravenclaw:hover{
+.answer-button-ravenclaw:hover {
   font-family: 'Harry Potter';
-  border-radius:50%;
-  background-color: #946B2D;
-  color: #0E1A40;
+  border-radius: 50%;
+  background-color: #946b2d;
+  color: #0e1a40;
 }
 
-.heading{
+.heading {
   font-family: 'Harry Potter';
   margin-left: auto;
   margin-right: auto;
 }
 
-.avatar-hermione{
+.avatar-hermione {
   grid-column-start: 1;
-  height: 60%;
-  width: auto;
+  height: 225px;
+  width: 155px;
   object-fit: cover;
   border-radius: 50%;
   border: 10px solid #740001;
 }
-.avatar-luna{
+.avatar-luna {
   grid-column-start: 2;
-  height: 60%;
-  width: auto;
+  height: 325px;
+  width: 255px;
   object-fit: cover;
   border-radius: 50%;
-  border: 10px solid #0E1A40;
+  border: 10px solid #0e1a40;
 }
-.avatar-minerva{
+.avatar-minerva {
   grid-column-start: 4;
-  height: 60%;
-  width: auto;
+  height: 325px;
+  width: 255px;
   object-fit: cover;
   border-radius: 50%;
-  border: 10px solid #D3A625;
+  border: 10px solid #d3a625;
 }
-.avatar-bellatrix{
+.avatar-bellatrix {
   grid-column-start: 3;
-  height: 60%;
-  width: auto;
+  height: 325px;
+  width: 255px;
   object-fit: cover;
   border-radius: 50%;
-  border: 10px solid #1A472A;
+  border: 10px solid #1a472a;
 }
 .avatar-grid {
-  display: grid;
-  gap: 1em;
-  grid-column-start: 2;
-  grid-row-start: 4;
-  grid-template-columns: repeat(4, 25%)
+  display: inline-flex;
+  margin-left: 35%;
+  margin-top: -30%;
+}
+
+.allavatar {
+  margin-right: 30px;
 }
 
 .home-wrapper > div {
-  display: grid;
   grid-template-columns: 20% 80%;
-  grid-template-rows: repeat(5, 20%)
+  grid-template-rows: repeat(4, 25%);
 }
 
-.question-body-grid{
-
+/* .question-body-grid {
 }
 
-.finish-body-grid{
-
+.finish-body-grid {
 }
 
 .body-mobile {
-
 }
 
 .character-choice {
-  
+} */
+
+.character-choice-text {
+  font-family: 'Harry Potter';
+}
+.score {
+  font-family: 'Harry Potter';
 }
 
-.character-choice-text{
-  font-family: 'Harry Potter'
-}
-.score{
-  font-family: 'Harry Potter'
-}
-
-.endScore{
-  font-family: 'Harry Potter'
+.endScore {
+  font-family: 'Harry Potter';
 }
 
 .entername {
-  font-family: 'Harry Potter'
+  font-family: 'Harry Potter';
 }
 
 .gif {
+}
 
+.flexheader {
+  display: grid;
 }
 
 .emblem {
-  position: relative;
-  /* left: 1040px; */
-  grid-column-start: 1;
-  grid-row-start: 2
-
-}
-/* .emblem-grid {
   display: grid;
-  grid-column-start: 1;
-  grid-row-start: 2
+  position: relative;
 
-} */
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
 
 .logo {
   position: center;
-  border-radius:40%
+  border-radius: 40%;
 }
-.logo-grid{
+.logo-grid {
   display: grid;
   grid-column-start: 2;
-  grid-row-start: 1
+  grid-row-start: 1;
+  margin-top: 50px;
 }
 
 .bg {
   background-image: url('./pics/map2.png');
 }
 
-.temp-grid{
+.temp-grid {
   display: grid;
   grid-column-start: 2;
-  grid-row-start: 2
+  grid-row-start: 2;
 }

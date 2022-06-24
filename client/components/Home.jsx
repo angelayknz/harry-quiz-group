@@ -28,16 +28,17 @@ export default function Home() {
 
   return (
     <div className="home-wrapper bg">
-      <img className="emblem" src="./pics/transparenthpe.gif" alt="emblem" />
+      <div className="flexheader">
+        <img className="emblem" src="./pics/transparenthpe.gif" alt="emblem" />
 
-      <div className="logo-grid">
-        <img className="logo logo-grid" src="./pics/hpt.png" />
+        <div className="logo-grid">
+          <img className="logo logo-grid" src="./pics/hpt.png" />
+        </div>
       </div>
-
       <div className="avatar-grid">
         {mainCharInfo.map((char) => {
           return (
-            <div className="avatar-grid" key={char.id}>
+            <div className="allavatar" key={char.id}>
               {/* <div>{char.character}</div> */}
               <img
                 className="avatar-hermione"
@@ -48,22 +49,6 @@ export default function Home() {
           )
         })}
       </div>
-
-      {/* <div className="avatar-grid">
-        <img
-          className="avatar-hermione"
-          src="{./pics/lunalovegood.jpeg}"
-          
-          alt=""
-        />
-        <img className="avatar-luna" src="./pics/lunalovegood.jpeg" alt="" />
-        <img
-          className="avatar-bellatrix"
-          src="./pics/lunalovegood.jpeg"
-          alt=""
-        />
-        <img className="avatar-minerva" src="./pics/lunalovegood.jpeg" alt="" />
-      </div> */}
 
       <div className="main-button-grid">
         <button className="main-button">main button</button>
