@@ -15,7 +15,7 @@ export default function Question(props) {
   //   wrongAnswers: ['Durmstrang', 'Beauxbatons', 'Castelobruxo'],
   // }
   // console.log(randObj.answer)
-  function HandleNextButtonClick(e) {
+  function handleNextButtonClick(e) {
     e.preventDefault()
     changeQuestionNumberFn()
     const correctAnswer = document.getElementsByClassName('answer-clicked')[0]
@@ -25,17 +25,25 @@ export default function Question(props) {
   function handleCorrectAnswerClick(e) {
     e.preventDefault()
     e.target.classList.add('answer-clicked')
+    updateScore()
     const wrongAnswers = document.getElementsByClassName('wrong-answer')
     const wrongAnswer1 = wrongAnswers[0]
     const wrongAnswer2 = wrongAnswers[1]
     const wrongAnswer3 = wrongAnswers[2]
 
-    wrongAnswer1.removeEventListener('onClick', handleWrongAnswerClick)
-    updateScore()
+    const next = document.getElementById('next-button')
+    next.addEventListener('click', handleNextButtonClick, true)
   }
+
   function handleWrongAnswerClick(e) {
     e.preventDefault()
     e.target.classList.add('wrong-answer-clicked')
+
+    const correctAnswer = document.getElementsByClassName('correct-answer')[0]
+    correctAnswer ? correctAnswer.classList.add('answer-clicked') : null
+
+    const next = document.getElementById('next-button')
+    next.addEventListener('click', handleNextButtonClick, true)
   }
 
   return (
@@ -49,13 +57,13 @@ export default function Question(props) {
           <div
             key={wa}
             className="answer wrong-answer"
-            onClick={handleWrongAnswerClick}
+            onMouseDown={handleWrongAnswerClick}
           >
             {wa}
           </div>
         )
       })}
-      <button onClick={HandleNextButtonClick}>next</button>
+      <button id="next-button">next</button>
     </div>
   )
 }

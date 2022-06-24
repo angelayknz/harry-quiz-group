@@ -32,7 +32,11 @@ function App() {
     <div>
       <Home />
       {questionsData ? (
-        <Questions questions={questionsData} updateScore={updateScore} />
+        <Questions
+          questions={questionsData}
+          updateScore={updateScore}
+          score={score}
+        />
       ) : null}
     </div>
   )
