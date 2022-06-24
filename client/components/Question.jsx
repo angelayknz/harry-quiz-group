@@ -31,6 +31,8 @@ export default function Question(props) {
     const wrongAnswer2 = wrongAnswers[1]
     const wrongAnswer3 = wrongAnswers[2]
 
+    wrongAnswer1.removeEventListener('mouseDonw', handleWrongAnswerClick)
+
     const next = document.getElementById('next-button')
     next.addEventListener('click', handleNextButtonClick, true)
   }
@@ -47,7 +49,7 @@ export default function Question(props) {
   }
 
   return (
-    <div>
+    <div className="display-question">
       <div className="question">{question.question}</div>
       <div className="answer correct-answer" onClick={handleCorrectAnswerClick}>
         {question.answer}
