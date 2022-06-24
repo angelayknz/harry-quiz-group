@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { getAllCharacters } from '../apiClient'
 
-export default function Home(props) {
+export default function Home() {
   const [mainCharInfo, setMainCharInfo] = useState([])
   const mainCharacters = [
     'Hermione Jean Granger',
@@ -27,7 +27,48 @@ export default function Home(props) {
   }, [])
 
   return (
-    <>
+    <div className="home-wrapper bg">
+      <img className="emblem" src="./pics/transparenthpe.gif" alt="emblem" />
+
+      <div className="logo-grid">
+        <img className="logo logo-grid" src="./pics/hpt.png" />
+      </div>
+
+      <div className="avatar-grid">
+        {mainCharInfo.map((char) => {
+          return (
+            <div className="avatar-grid" key={char.id}>
+              {/* <div>{char.character}</div> */}
+              <img
+                className="avatar-hermione"
+                src={char.image}
+                alt={char.character}
+              />
+            </div>
+          )
+        })}
+      </div>
+
+      {/* <div className="avatar-grid">
+        <img
+          className="avatar-hermione"
+          src="{./pics/lunalovegood.jpeg}"
+          
+          alt=""
+        />
+        <img className="avatar-luna" src="./pics/lunalovegood.jpeg" alt="" />
+        <img
+          className="avatar-bellatrix"
+          src="./pics/lunalovegood.jpeg"
+          alt=""
+        />
+        <img className="avatar-minerva" src="./pics/lunalovegood.jpeg" alt="" />
+      </div> */}
+
+      <div className="main-button-grid">
+        <button className="main-button">main button</button>
+      </div>
+
       <form>
         <h1>Harry Potter Quiz</h1>
         <label>
@@ -35,17 +76,8 @@ export default function Home(props) {
         </label>
         <h4>Choose your character picture from below</h4>
 
-        {mainCharInfo.map((char) => {
-          return (
-            <div key={char.id}>
-              <div>{char.character}</div>
-              <img src={char.image} alt={char.character} />
-            </div>
-          )
-        })}
-
         <input type="submit" value="Submit" />
       </form>
-    </>
+    </div>
   )
 }
