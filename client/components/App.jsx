@@ -18,7 +18,7 @@ function App() {
 
   const [mainCharInfo, setMainCharInfo] = useState([])
 
-  const [questionsData, setQuestionsData] = useState([])
+  const [questionsData, setQuestionsData] = useState(false)
 
   useEffect(() => {
     getAllCharacters()
@@ -56,7 +56,7 @@ function App() {
           </div>
         )
       })}
-      <Questions questions={questionsData} />
+      {questionsData ? <Questions questions={questionsData} /> : null}
     </div>
   )
 }

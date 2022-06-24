@@ -1,11 +1,7 @@
 [
   {
     "question": "What school does Harry Potter attend?",
-    "wrongAnswers": [
-      "Durmstrang",
-      "Beauxbatons",
-      "Castelobruxo"
-    ]
+    "wrongAnswers": ["Durmstrang", "Beauxbatons", "Castelobruxo"]
   },
   {
     "question": "Who is the headmaster of the school Harry attends?",
@@ -25,7 +21,11 @@
   },
   {
     "question": "What game, using flying broomsticks, is played by wizards?",
-    "wrongAnswers": ["Headless Hunt", "Winged Horse Races", "Wizarding Skittles"]
+    "wrongAnswers": [
+      "Headless Hunt",
+      "Winged Horse Races",
+      "Wizarding Skittles"
+    ]
   },
   {
     "question": "What teacher, despised by many, teaches potions?",

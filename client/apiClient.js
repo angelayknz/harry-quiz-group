@@ -20,7 +20,8 @@ export function getAllCharacters() {
 export function getAllQuestions() {
   return request.get('api/v1/questions').then((response) => {
     const questions = response.body
-    console.log(questions)
+
+    // console.log(typeof questions[0].answer)
 
     //TESTING ONE QUESTION FOR WRONG ANSWERS
     // const question = questions[0]
